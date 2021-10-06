@@ -1,22 +1,9 @@
-interface Cachorro {
-  nome: string;
-  idade: number;
-  parqueFaviroto?: string;
-}
+import $ from 'jquery';
 
-type CachorroSomenteLeitura = {
-  readonly [k in keyof Cachorro]-?: Cachorro[k]
-}
-
-class MeuCachorro implements Cachorro {
-  idade;
-  nome;
-  parqueFaviroto;
-  
-  constructor(nome, idade) {
-    this.nome = nome;
-    this.idade = idade;
+$.fn.extend({
+  novaFuncao() {
+    console.log('Chamou nova funcao')
   }
-}
+});
 
-const cao = new MeuCachorro('Apolo', 14)
+$('input').novaFuncao();
