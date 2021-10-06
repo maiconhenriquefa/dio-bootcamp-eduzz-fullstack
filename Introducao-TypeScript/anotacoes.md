@@ -1,0 +1,4 @@
+# Conceito
+TypeScript é uma lingugem de programação de código aberto desenvolvida pela Microsoft. É um superconjunto sintático estrito de JavaScript e adiciona tipagem estática opcional à linguagem. - Wikipédia
+
+Tipagem: estática, forte e inferida.
