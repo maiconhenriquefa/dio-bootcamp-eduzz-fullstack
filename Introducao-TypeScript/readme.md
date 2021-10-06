@@ -2,6 +2,9 @@
 "TypeScript é uma lingugem de programação de código aberto desenvolvida pela Microsoft. É um superconjunto sintático estrito de JavaScript e adiciona tipagem estática opcional à linguagem." - Wikipédia
 
 Tipagem: estática, forte e inferida.
+- estático: verifica se há erros em um programa antes da execução e o faz com base nos tipos de valores.
+- forte: adiciona regras sobre como diferentes tipos de valores podem ser usados
+- inferida: nunca altera o comportamento do seu programa com base nos tipos que ele infere.
 
 ## Transpilação com Parcel
 

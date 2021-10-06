@@ -1,5 +1,22 @@
-function sum(a:number, b:number) {
-  return a+b;
+// types: similar a propriedade, mas definindo o tipo.
+// interfaces: similar ao conceito de classes.
+
+interface IAnimal {
+  nome: string;
+  tipo: 'terrestre' | 'aquático';
 }
 
-sum('a'+'b')
+interface IFelino extends IAnimal {
+  visaoNoturna: boolean,
+}
+
+const animal: IAnimal ={
+  nome: 'Elefante',
+  tipo: "terrestre",
+}
+
+const felino: IFelino ={
+  nome: 'Leão',
+  tipo: "terrestre",
+  visaoNoturna: true,
+}
