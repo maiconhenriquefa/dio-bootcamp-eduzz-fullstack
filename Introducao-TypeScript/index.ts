@@ -1,22 +1,25 @@
-// types: similar a propriedade, mas definindo o tipo.
-// interfaces: similar ao conceito de classes.
+// types: para junçõe ou separações de interfaces
+// interfaces: definir contratos deestrutura de dados, de classe
 
 interface IAnimal {
   nome: string;
   tipo: 'terrestre' | 'aquático';
+  domestico: boolean;
 }
 
 interface IFelino extends IAnimal {
   visaoNoturna: boolean,
 }
 
-const animal: IAnimal ={
-  nome: 'Elefante',
-  tipo: "terrestre",
+interface ICanino extends IAnimal {
+  porte: 'pequeno' | 'medio' | 'grande';
 }
 
-const felino: IFelino ={
-  nome: 'Leão',
+type IDomestico = IFelino | ICanino;
+
+const animal: IDomestico ={
+  nome: 'Elefante',
   tipo: "terrestre",
-  visaoNoturna: true,
+  domestico: false,
+  porte: "grande",
 }
